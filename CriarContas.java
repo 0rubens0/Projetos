@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class CriarConta {
     public static void main(String[] args) {
+
         //Pedir se tem uma conta
         Scanner scanner = new Scanner(System.in);
         System.out.println("Tu possui uma conta? (S/N)");
@@ -15,13 +16,13 @@ public class CriarConta {
         
             System.out.println("Deseja criar uma conta? (S/N)");
             String Criar1 = Quer.nextLine();
-            if (Criar1.equals("S") || Criar1.equals("s")) {
-            System.out.println("Começar Processo de Criar conta");
-
             // processo de criar cancelado
             if (Criar1.equals("N") || Criar1.equals("n")) {
                 System.out.println("Processo de criar conta cancelado");
             }
+            // processo de criar
+            if (Criar1.equals("S") || Criar1.equals("s")) {
+            System.out.println("Começar Processo de Criar conta");
 
             // pedir o nome da conta
             Scanner nome = new Scanner(System.in);
@@ -105,6 +106,7 @@ else {
             }
         }
     }
+}
 }
 }
 }
