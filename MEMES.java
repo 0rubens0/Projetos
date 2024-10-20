@@ -3,83 +3,11 @@ import java.util.Scanner;
 
 public class Zueiras {
     public static void main(String[] args) {
-
         //Pedir se tem uma conta
         Scanner scanner = new Scanner(System.in);
         System.out.println("Tu possui uma conta? (S/N)");
         String Criar = scanner.nextLine();
         
-        // entrando na conta 
-        if (Criar.equals("s") || Criar.equals("S")) {
-            System.out.println("Ok, Quer entrar na conta? (S/N)");
-            Scanner Quer2 = new Scanner(System.in);
-            String Criar2 = Quer2.nextLine();
-            if (Criar2.equals("S") || Criar2.equals("s")) {
-                Scanner nome = new Scanner(System.in);
-                System.out.println("Digite seu nome: ");
-                String username = nome.nextLine();
-
-                Scanner Senha = new Scanner(System.in);
-                System.out.println("Digite sua senha: ");
-                String password = Senha.nextLine();
-                
-                nome.close();
-                Senha.close();
-                Quer2.close();
-                //! avisando novamente o nome tu pode olhar mas asenha não porfavor!!
-                //! porfavor não olhe isto primeiro faça o enigma
-                if (username.equals("programmer_time") && password.equals("S2m9@lol90")) {
-                    System.out.println("!BEM VINDO AOS COMANDOS ESCONDIDOS!");
-                    System.out.println("[1] Roleta | [2] Video Misterioso | [3] Site Misterioso");
-                    int poderes = 3; // Seguiser usar um poder coloque esses valores (1,2,3,4)
-                    switch (poderes) {
-                        case 1:
-                        try{
-                            URI link = new URI("https://pt.piliapp.com/random/wheel/emoji-smileys/");
-                            java.awt.Desktop.getDesktop().browse(link);
-                        }catch(Exception erro){
-                            System.out.println(erro);
-                        }
-                        break;
-                        case 2:
-                            System.out.println("Video Misterioso");
-                            try{
-                                URI link = new URI("https://www.youtube.com/watch?v=4oICK8karv8");
-                                java.awt.Desktop.getDesktop().browse(link);
-                            }catch(Exception erro){
-                                System.out.println(erro);
-                            }
-                            break;
-                        case 3:
-                            System.out.println("Site Misterioso");
-                            try{
-                                URI link = new URI("https://github.com/0rubens0");
-                                java.awt.Desktop.getDesktop().browse(link);
-                            }catch(Exception erro){
-                                System.out.println(erro);
-                            }
-                            try{
-                                URI link = new URI("https://www.linkedin.com/in/rubens-golfett-83959332a/");
-                                java.awt.Desktop.getDesktop().browse(link);
-                            }catch(Exception erro){
-                                System.out.println(erro);
-                            }
-                            break;
-                        default:
-                            System.out.println("Erro poder invalido");
-                            try{
-                                URI link = new URI("https://www.youtube.com/shorts/ACdOdtOviMk");
-                                java.awt.Desktop.getDesktop().browse(link);
-                            }catch(Exception erro){
-                                System.out.println(erro);
-                            }
-                            break;
-                    }//S2
-                }else {
-                    System.out.println("Nome de usuario ou senha invalidos");
-                }
-        }
-        // Pedir para criar uma conta
         if (Criar.equals("N") || Criar.equals("n")) {
             Scanner Quer = new Scanner(System.in);
         
@@ -230,6 +158,75 @@ else {
         }
     }
 }
-}
-}
+
+
+        // entrando na conta 
+        if (Criar.equals("s") || Criar.equals("S")) {
+            System.out.println("Ok, Quer entrar na conta? (S/N)");
+            Scanner Quer2 = new Scanner(System.in);
+            String Criar2 = Quer2.nextLine();
+            if (Criar2.equals("S") || Criar2.equals("s")) {
+                Scanner nome = new Scanner(System.in);
+                System.out.println("Digite seu nome: ");
+                String username = nome.nextLine();
+
+                Scanner Senha = new Scanner(System.in);
+                System.out.println("Digite sua senha: ");
+                String password = Senha.nextLine();
+                
+                nome.close();
+                Senha.close();
+                Quer2.close();
+                //! avisando novamente o nome tu pode olhar mas asenha não porfavor!!
+                //! porfavor não olhe isto primeiro faça o enigma
+                if (username.equals("programmer_time") && password.equals("S2m9@lol90")) {
+                    System.out.println("!BEM VINDO AOS COMANDOS ESCONDIDOS!");
+                    System.out.println("[1] Roleta | [2] Video Misterioso | [3] Site Misterioso");
+                    int poderes = 4; // Seguiser usar um poder coloque esses valores (1,2,3,4)
+                    switch (poderes) {
+                        case 1:
+                        try{
+                            URI link = new URI("https://pt.piliapp.com/random/wheel/emoji-smileys/");
+                            java.awt.Desktop.getDesktop().browse(link);
+                        }catch(Exception erro){
+                            System.out.println(erro);
+                        }
+                        break;
+                        case 2:
+                            System.out.println("Video Misterioso");
+                            try{
+                                URI link = new URI("https://www.youtube.com/watch?v=4oICK8karv8");
+                                java.awt.Desktop.getDesktop().browse(link);
+                            }catch(Exception erro){
+                                System.out.println(erro);
+                            }
+                            break;
+                        case 3:
+                            System.out.println("Site Misterioso");
+                            try{
+                                URI link = new URI("https://github.com/0rubens0");
+                                java.awt.Desktop.getDesktop().browse(link);
+                            }catch(Exception erro){
+                                System.out.println(erro);
+                            }
+                            try{
+                                URI link = new URI("https://www.linkedin.com/in/rubens-golfett-83959332a/");
+                                java.awt.Desktop.getDesktop().browse(link);
+                            }catch(Exception erro){
+                                System.out.println(erro);
+                            }
+                            break;
+                        default:
+                            System.out.println("Erro poder invalido");
+                            try{
+                                URI link = new URI("https://www.youtube.com/shorts/ACdOdtOviMk");
+                                java.awt.Desktop.getDesktop().browse(link);
+                            }catch(Exception erro){
+                                System.out.println(erro);
+                            }
+                        }
+                }
+            }
+        }
+    }
 }
